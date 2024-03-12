@@ -1,32 +1,20 @@
 import 'package:flutter/material.dart';
-
+import 'profile.dart';
 void main() {
-  runApp(const Login());
+  runApp(const MyApp());
 }
-class Login extends StatefulWidget {
-  const Login({Key? key}) : super(key: key);
+class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
 
   @override
-  State<Login> createState() => _LoginState();
+  State<MyApp> createState() => _MyAppState();
 }
 
-class _LoginState extends State<Login> {
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.teal,
-      body:Column(
-        children: [
-          Text('Login',style: TextStyle(fontSize: 28,color: Colors.white),),
-          SizedBox(
-            height: 50,
-          ),
-          TextField(decoration: InputDecoration(
-
-          ),)
-        ],
-      ),
-    )
+    return MaterialApp(
+      home:profile(),
+    );
   }
 }
-
