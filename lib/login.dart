@@ -20,8 +20,8 @@ class _LoginState extends State<Login> {
               height: 100,
             ),
             Text(
-              'Login',
-              style: TextStyle(fontSize: 28, color: Colors.white),
+              'LOGIN',
+              style: TextStyle(fontSize: 28, color: Colors.white,fontWeight:),
             ),
             SizedBox(
               height: 50,
@@ -32,7 +32,7 @@ class _LoginState extends State<Login> {
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Enter your Roll number',
+                  labelText: 'Enter your Roll  number',
                 ),
               ),
             ),
