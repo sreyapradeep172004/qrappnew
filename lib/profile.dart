@@ -21,7 +21,7 @@ class _profileState extends State<profile> {
             Container(
                 height:100,
                 width: 100,
-                child: Image.asset('images/profile.png')),
+                child: Image.asset('images/man.png')),
             SizedBox(
               height: 100,
             ),
