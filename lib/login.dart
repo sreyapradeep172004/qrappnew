@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qrapp/registration.dart';
+import 'package:qrapp/profile.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -21,7 +22,10 @@ class _LoginState extends State<Login> {
             ),
             Text(
               'LOGIN',
-              style: TextStyle(fontSize: 28, color: Colors.white,),
+              style: TextStyle(
+                fontSize: 28,
+                color: Colors.white,
+              ),
             ),
             SizedBox(
               height: 50,
@@ -32,7 +36,7 @@ class _LoginState extends State<Login> {
               child: TextField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(),
-                  labelText: 'Enter your Roll  number',
+                  labelText: 'Enter your Roll number',
                 ),
               ),
             ),
@@ -59,7 +63,13 @@ class _LoginState extends State<Login> {
                   style: ElevatedButton.styleFrom(
                     primary: Colors.white,
                   ),
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => Profile(),
+                        ));
+                  },
                   child: Text(
                     'Login',
                     style: TextStyle(color: Colors.teal, fontSize: 18),

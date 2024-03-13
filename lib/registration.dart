@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:qrapp/profile.dart';
+import 'package:qrapp/regsuccess.dart';
 
 class Reg extends StatefulWidget {
   const Reg({Key? key}) : super(key: key);
@@ -81,7 +81,7 @@ class _RegState extends State<Reg> {
                     primary: Colors.white,
                   ),
                   onPressed: () {
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => profile(),));
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => Success(),));
                   },
                   child: Text(
                     'Register',

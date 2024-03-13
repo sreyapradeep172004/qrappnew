@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:qr_flutter/qr_flutter.dart';
 
-class profile extends StatefulWidget {
-  const profile({Key? key}) : super(key: key);
+class Profile extends StatefulWidget {
+  const Profile({Key? key}) : super(key: key);
 
   @override
-  State<profile> createState() => _profileState();
+  State<Profile> createState() => _ProfileState();
 }
 
-class _profileState extends State<profile> {
+class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,12 +24,13 @@ class _profileState extends State<profile> {
                 width: 100,
                 child: Image.asset('images/man.png')),
             SizedBox(
-              height: 100,
+              height: 50,
             ),
-            Container(
-              height: 200,
-                width: 200,
-                child: Image.asset('images/qr.png'))
+            QrImage(
+              data: '9778210540',
+              version: QrVersions.auto,
+              size: 200.0,
+            ),
           ],
         ),
       ),
