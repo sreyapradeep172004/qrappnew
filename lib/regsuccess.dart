@@ -25,7 +25,7 @@ class _successState extends State<Success> {
               height: 50,
             ),
             Text(
-              'Registered Succesfully!',
+              'Registered Successfully!',
               style: TextStyle(fontSize: 28, color: Colors.red),
             ),
             SizedBox(
